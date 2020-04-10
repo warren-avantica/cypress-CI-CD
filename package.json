@@ -1,0 +1,27 @@
+{
+  "name": "cypress-ci-cd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run-chrome": "cypress run --browser chrome",
+    "cy:run-electron": "cypress run --browser electron",
+    "cy:open": "cypress open",
+    "cy:run-dashboard": "cypress run --record --key 48c51ac4-d33e-45e4-b86b-3cd4e6cebb0c",
+    "start-jenkins-server": "java -jar jenkins.war httpPort=8080 --enable-future-java"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warren-avantica/cypress-CI-CD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/warren-avantica/cypress-CI-CD/issues"
+  },
+  "homepage": "https://github.com/warren-avantica/cypress-CI-CD#readme",
+  "dependencies": {
+    "cypress": "^4.3.0",
+    "prettier": "^2.0.4"
+  }
+}
